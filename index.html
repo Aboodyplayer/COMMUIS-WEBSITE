@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Website with Background Video - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+  
+<video autoplay loop  plays-inline id="backVideo">
+    <source src="images/2222feeling-lazy-pvp-e-deivsaos.mp4" type="video/mp4">
+</video>
+
+    <img src="images/hamburger.png" class="menu-icon">
+
+   <div class="sidebar">
+<div class="top-links">
+    <img src="images/arrow.png" class="arrow-icon">
+<div>
+<img src="images/audio.png">
+<img src="images/link.png">
+   </div>
+   </div>
+ 
+   <h1>Leo Zhong</h1>
+<h3>Yugolsvla, Eyadrov</h3>
+<p>lets rise the ecmoney by our party of people lets make our city stroong we are the people of commuis party of eyadrov PROTECTING OUR GLORIOUS LANDS AND ECONOMY FROM FASICT join Us for better support</p>
+
+<a href="#">More Details</a>
+
+</div>
+
+<img src="images/play.png" id="btn">
+
+</div>
+
+<script>
+    let backVideo = document.getElementById("backVideo");
+    let btn = document.getElementById("btn");
+
+    btn.onclick = function(){
+        backVideo.style.display = "block";
+    
+    if(backVideo.paused){
+        backVideo.play();
+    btn.src = "images/pause.png";
+    }
+    else{
+        backVideo.pause();
+        btn.src = "images/play.png";
+    }
+    
+    
+    }
+</script>
+
+</body>
+</html>
